@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Шапка страницы-->
+    <header class="page-header">
+  
+      <div class="container flexbox">
+      <nav class="navigation">
+        <a href="./index.html" class="logo"> <span>Web</span>Studio</a>
+        <!--Навигация на другие страницы-->
+        <ul class="site-nav list">
+          <li class="site-nav-item"><a href="./index.html" class="link current site-nav-link">Студия</a></li>
+          <li class="site-nav-item"><a href="./portfolio.html" class="link site-nav-link">Портфолио</a></li>
+          <li class="site-nav-item"><a href="./index.html" class="link site-nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="auth-nav list ">
+        <li class="contacts">
+          <a href="mailto:info@example.com" class="link mail">info@example.com</a>
+        </li>
+        <li class="contacts"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
+      </ul>
+    </div>
+    <span class="line flexbox"></span>
+    </header>
+    <main>
+      <!--герой-->
+      <section class="hero">
+        <div class="hero-box">
+        <h1 class="hero-title">Эффективные решения <br/> для вашего бизнеса</h1>
+        <a href="" class=" primary-button">Заказать услугу</a>
+      </div>
+      </section>
+      <!-- преимущества-->
+      <section class="section feature">
+        <div class="container">
+        <ul class="feature-list list flexbox">
+          <li class="flex-element">
+            
+            <h3 class="section-title">Внимание к деталям</h3>
+            <p class="section-text">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          
+          </li>
+          <li class="flex-element">
+            
+            <h3 class="section-title">Пунктуальность</h3>
+            <p class="section-text">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="flex-element">
+
+            <h3 class="section-title">Планирование</h3>
+            <p class="section-text">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          
+          </li>
+          <li class="flex-element">
+            
+            <h3 class="section-title">Современные технологии</h3>
+            <p class="section-text">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          
+          </li>
+        </ul>
+      </div>
+      </section>
+      <!--галерея-->
+      <section class="section gallery">
+        <div class="container">
+        <h2>Чем мы занимаемся</h2>
+        <ul class="work list flexbox">
+          <li class="work-photo list">
+            <a href="">
+              <img src="./img/box1.jpg" alt="Работа с контентом" width="370" />
+            </a>
+          </li>
+          <li class="work-photo list">
+            <a href="">
+              <img
+                src="./img/box2.jpg"
+                alt="Работа с мобильными приложениями"
+                width="370"
+              />
+            </a>
+          </li>
+          <li class="work-photo list">
+            <a href="">
+              <img
+                src="./img/box3.jpg"
+                alt="Планшет с палитрой цвета"
+                width="370"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      </section>
+      <!--команда-->
+      <section class="section team-section">
+        <div class="container">
+        <h2>Наша команда</h2>
+        <ul class="team list flexbox">
+          <li class="team-box list">
+            <img src="./img/img(1).jpg" class="team-pecture" alt="Фото члена команды" width="270" />
+            <div class="work-desc">
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
+            </div>
+          </li>
+          <li class="team-box list">
+            <img src="./img/img(2).jpg" class="team-pecture" alt="Фото члена команды" width="270" />
+            <div class="work-desc">
+            <h3 class="team-name">Ольга Репина</h3>
+            <p class="team-text">Frontend Developer</p>
+          </div>
+          </li>
+          <li class="team-box list">
+            <img src="./img/img(3).jpg" class="team-pecture" alt="Фото члена команды" width="270" />
+            <div class="work-desc">
+            <h3 class="team-name">Николай Тарасов</h3>
+            <p class="team-text">Marketing</p>
+          </div>
+          </li>
+          <li class="team-box list">
+            <img src="./img/img(4).jpg" class="team-pecture" alt="Фото члена команды" width="270" />
+            <div class="work-desc">
+            <h3 class="team-name">Михаил Ермаков</h3>
+            <p class="team-text">UI Designer</p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-max">
+        <a href="./index.html" class="logo">
+          <span>Web</span><span class="logo-white">Studio</span></a
+        >
+      </div>
+        <address class="address">
+          г. Киев, пр-т Леси Украинки, 26<br />
+          <a href="mailto:info@example.com" class="link">info@example.com</a><br />
+          <a href="tel:+380991111111" class="link-tel">+38 099 111 11 11</a>
+        </address>
+        </div>
+      </footer>
+  </body>
+</html>
