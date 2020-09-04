@@ -7,7 +7,7 @@
   --gray-bgc: #f5f4fa;
   --mailito: rgba(255, 255, 255, 0.6);
   --ftr-bcg: #2f303a;
-  
+  --social-icon: #AFB1B8;
 }
 
 /* цвет основного текста 212121 */
@@ -143,22 +143,35 @@ letter-spacing: 0.02em;
 
 
 /*адрес в хедере*/
+
+.contacts-icon{
+  fill: var(--secondary-text);
+  margin-right: 10px;
+ }
+
 .auth-nav {
   display: flex;
 }
-.auth-nav .link {
+
+.auth-nav .link-contacts {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text);
 }
- .auth-nav .link:hover, 
- .auth-nav .link:focus {
-  color: var(--active);
+
+.link-contacts:hover, 
+.link-contacts:focus {
+  fill: var(--active);
 }
+
  .contacts:not(:last-child) {
   margin-right: 50px;
+}
+.line {
+  border-bottom: 1px solid #ECECEC;
+  flex-grow: 1;
 }
 
   
@@ -212,7 +225,23 @@ color: var(--white);
 
 .flex-element:not(:last-child) {
   margin-right: 30px;
+
 }
+
+
+.feature-icon  {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  background-color: var(--gray-bgc);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+
 .section-title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -261,7 +290,7 @@ color: var(--white);
   text-align: center;
 }
 .team .list {
-  background-color: var(--gray-bgc);
+  background-color: var(--white);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -274,17 +303,16 @@ color: var(--white);
 }
 .team-box {
   width: calc((100% - 30px * 3) / 4);
-  background: #FFFFFF;
-/* material shadow v1 */
-
+  background: var(--white);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 
 .work-desc {
-  padding-right: 24px;
+   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
+  text-align: center;
 
 }
 
@@ -300,12 +328,83 @@ border-radius: 0px 0px 4px 4px;
   margin-bottom: 10px;
 }
 .team-text {
+
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   color: var(--secondary-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+}
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.social-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:44px;
+  height:44px;
+  background-color: var(--white);
+  border-radius: 50%;
+  
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--active);
+}
+
+.social-icon-link .social-icon:hover,
+.social-icon-link .social-icon:focus  {
+fill: var(--white)
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-icon);
+}
+/*клиенты*/
+
+.clients h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 170px;
+  height: 90px;
+   fill: var(--social-icon);
+  border: 1px solid var(--social-icon);
+  border-radius: 4px;
+}
+
+
+.clients-link .clients-icon:hover,
+.clients-link .clients-icon:focus {
+  fill: var(--active);
+}
+
+
+.clients-icon {
+  width: 45px;
+  height: 50px;
 }
 
 /*футер*/
@@ -320,6 +419,7 @@ border-radius: 0px 0px 4px 4px;
   color: var(--white);
 }
 .logo-max {
+  display: inline-block;
   margin-bottom: 20px;
 }
 /*адрес*/
@@ -348,6 +448,60 @@ border-radius: 0px 0px 4px 4px;
   padding-bottom: 0;
   margin-right: 0;
 }
+.footer-box {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.follow {
+  display: block;
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white);
+margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:44px;
+  height:44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--active);
+}
+
+.footer-icon-link .footer-icon:hover,
+.footer-icon-link .footer-icon:focus  {
+fill: var(--white)
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
+
 
 
 
