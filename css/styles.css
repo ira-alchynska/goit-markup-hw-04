@@ -185,6 +185,9 @@ color: var(--secondary-text);
 
 /*герой*/
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 height: 600px;
 max-width: 1600px;
 margin-right: auto;
@@ -194,11 +197,10 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
-.hero-box {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.hero .hero-box {
   text-align: center;
 }
+
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -349,7 +351,7 @@ border-radius: 0px 0px 4px 4px;
 .social-icon-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .social-icon-item:not(:last-child) {
   margin-right: 10px;
@@ -429,12 +431,21 @@ display: flex;
   padding-bottom: 0px;
 }
 
-.logo > span {
+.logo-footer > span {
   color: var(--active);
- 
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
-.logo .logo-white {
+.logo-footer .logo-white {
   
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--white);
 }
 .logo-max {
@@ -464,7 +475,7 @@ display: flex;
   background-color: var(--ftr-bcg);
 }
 
-.footer .logo {
+.footer .logo-max {
   padding-top: 0;
   padding-bottom: 0;
   margin-right: 0;
