@@ -22,11 +22,20 @@
           <li class="site-nav-item"><a href="./index.html" class="link ">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="auth-nav list ">
+      <ul class="auth-nav list flexbox">
         <li class="contacts">
-          <a href="mailto:info@example.com" class="link mail">info@example.com</a>
+          <a class="link-contacts" href="mailto:info@example.com" >
+          <svg class="contacts-icon" width="16" height="12"> 
+            <use href="./img/icons/symbol-defs.svg#envelope"></use>
+          </svg>
+            info@example.com</a>
         </li>
-        <li class="contacts"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
+        <li class="contacts">
+          <a class="link-contacts"  href="tel:+380991111111"  >
+          <svg class="contacts-icon" width="10" height="16">
+            <use href="./img/icons/symbol-defs.svg#smartphone"></use>
+          </svg>
+          +38 099 111 11 11</a></li>
       </ul>
     </div>
     <span class="line flexbox"></span>
@@ -132,14 +141,46 @@
       <div class="container">
         <div class="logo-max">
         <a href="./index.html" class="logo">
-          <span>Web</span><span class="logo-white">Studio</span></a
-        ></div>
+          <span>Web</span><span class="logo-white">Studio</span></a>
+      
         <address class="address">
           г. Киев, пр-т Леси Украинки, 26<br />
           <a href="mailto:info@example.com" class="link">info@example.com</a><br />
           <a href="tel:+380991111111" class="link-tel">+38 099 111 11 11</a>
         </address>
       </div>
-      </footer>
+        
+        <div class="footer-box">
+          <b class="follow">присоединяйтесь</b>
+        <ul class="footer-icon-list list">
+          <li class="footer-icon-item">
+<a class="footer-icon-link" href="https://www.instagram.com/" target="_blank" rel="" aria-label="ссылка на Инстаграм">
+<svg class="footer-icon">
+<use href="./img/icons/symbol-defs.svg#instagram"></use>
+</svg>
+</a> 
+          </li>
+          <li class="footer-icon-item list">
+<a class="footer-icon-link" href="https://twitter.com/" target="_blank" rel="" aria-label="ссылка на Твиттер">
+<svg class="footer-icon">
+<use href="./img/icons/symbol-defs.svg#twitter"></use>
+</svg>
+</a>
+<li class="footer-icon-item list">
+<a class="footer-icon-link" href="https://facebook.com/" target="_blank" rel="" aria-label="ссылка на Фейсбук">
+<svg class="footer-icon">
+  <use href="./img/icons/symbol-defs.svg#facebook"></use>
+</svg>
+</a>
+</li>
+<li class="footer-icon-item list">
+<a class="footer-icon-link" href="https://linkedin.com/" target="_blank" rel="" aria-label="ссылка на Линкедин">
+<svg class="footer-icon">
+  <use href="./img/icons/symbol-defs.svg#linkedin"></use>
+</svg>
+</a>
+</div>
+</div>
+ </footer>
   </body>
 </html>
