@@ -487,7 +487,7 @@ display: flex;
 
 /*адрес*/
 
-.container {
+ .footer .container {
   padding: 60px 15px;
 }
 
@@ -509,7 +509,7 @@ display: flex;
   color: rgba(255, 255, 255, 0.6)
 }
 
-.footer {
+.footer  {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--ftr-bcg);
